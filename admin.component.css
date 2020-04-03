@@ -1,0 +1,19 @@
+.id1
+{
+    opacity: 85%;
+  height: 1080px;
+  width:1920px;
+
+background-color: gainsboro;
+}
+
+.modal {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+ }

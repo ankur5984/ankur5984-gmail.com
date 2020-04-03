@@ -1,0 +1,63 @@
+
+<script>
+
+$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+
+<body>
+
+  <div id="myModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+
+            <div class="modal-body">
+                <p>body</p>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Child List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Age</th>
+            <th>Gender</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let childs of child ">
+            <td>{{childs.name |uppercase}}</td>
+            <td>{{childs.age}}</td>
+            <td>{{childs.gender | uppercase}}</td>
+            <td><button (click)="deleteChild(childs.childId)"  class="btn btn-danger">Delete</button>
+                </td>
+          
+          </tr>
+          <tr>
+            <td>
+              <button (click)="currentNeed()"  class="btn btn-danger">Current Need</button>
+                
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="id1">
+</div>

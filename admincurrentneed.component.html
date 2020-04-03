@@ -1,0 +1,27 @@
+<div id="id1">
+  <div id="id2">
+    <font size="20"><b>Current Need</b></font>
+  </div>
+  <br><br>
+<div class="container">
+
+    <form #myForm="ngForm" (ngSubmit)="add(myForm)" role="form">
+      <div class="form-group">
+        <label  for="name">Name:</label>
+        <input type="name"   style="width: 30%;" ngModel class="form-control" placeholder="Enter name" name="name">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="quantity">quantity:</label>
+        <input type="number"  style="width: 30%;" ngModel class="form-control" placeholder="Enter quantity" name="quantity">
+      </div>
+      <br>
+      <label for=""><b> Picture</b></label>
+      <input (change)="onSelectFile($event)" style="border: none; width: 30%;" type="file" class="form-control">
+      <br>
+      <button type="submit" class="btn btn-success">Save</button>
+
+    </form>
+  </div>
+
+  </div>
